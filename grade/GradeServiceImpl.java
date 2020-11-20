@@ -15,7 +15,7 @@ public class GradeServiceImpl implements GradeService{
 	}
 
 	@Override
-	public String findTopName() {
+	public String gradeSort() {
 		// TODO Auto-generated method stub
 		return null;
 	}
