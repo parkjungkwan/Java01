@@ -4,13 +4,13 @@ public class UserDaoImpl implements UserDao{
 
 	@Override
 	public void insertUser(UserDto user) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
 	@Override
 	public UserDto login(UserDto user) {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 

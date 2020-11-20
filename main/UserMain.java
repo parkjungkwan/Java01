@@ -3,7 +3,7 @@ package main;
 import java.util.Scanner;
 import user.UserController;
 import user.UserDto;
-public class Main {
+public class UserMain {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		UserController userController = new UserController();
@@ -48,8 +48,13 @@ public class Main {
 				userController.deleteUser(user);
 				break;
 			case "5":
-				System.out.println("아이디");
+				System.out.println("[아이디 중복체크] 아이디");
 				boolean exist = userController.getIdCheck(scanner.next());
+				if(exist) {
+					System.out.println("사용가능한 아이디입니다.");
+				}else {
+					System.out.println("사용 불가능한 아이디입니다.");
+				}
 				break;
 			case "6":
 				System.out.println("아이디,비번 ");
