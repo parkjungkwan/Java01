@@ -19,16 +19,13 @@ public class UserServiceImpl implements UserService{
 		if(user.getUserid().equals(users[0].getUserid()) &&
 				user.getPassword().equals(users[0].getPassword())) {
 			result = users[0];
-		}else {
-			result = null;
 		}
-		
 		return result;
 	}
 
 	@Override
 	public void update(UserDto user) {
-		// TODO Auto-generated method stub
+		users[0].setPassword(user.getPassword());
 		
 	}
 
