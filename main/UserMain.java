@@ -64,6 +64,9 @@ public class UserMain {
 				break;
 			case "7":
 				UserDto[] list = userController.getUserList();
+				for(int i=0; i< userController.getCount(); i++) {
+					System.out.println(list[i].toString()+"\n");
+				}
 				break;
 			case "8":
 				System.out.println("아이디");
@@ -71,7 +74,11 @@ public class UserMain {
 				break;
 			case "9":
 				System.out.println("이름");
-				UserDto[] nameSearch = userController.getNameSearch(scanner.next());
+				String name = scanner.next();
+				UserDto[] nameSearch = userController.getNameSearch(name);
+				for(int i=0; i< userController.getCountSameName(name); i++) {
+					System.out.println(nameSearch[i].toString()+"\n");
+				}
 				break;
 			case "10":
 				System.out.printf("전체회원수 : %d 명\n",userController.getCount());

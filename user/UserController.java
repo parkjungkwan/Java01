@@ -38,6 +38,9 @@ public class UserController {
 	public UserDto getIdSearch(String id) {
 		return userService.idSearch(id);
 	}
+	public int getCountSameName(String name) {
+		return userService.countSameName(name);
+	}
 
 	public UserDto[] getNameSearch(String name) {
 		return userService.nameSearch(name);

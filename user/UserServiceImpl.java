@@ -90,15 +90,20 @@ public class UserServiceImpl implements UserService{
 		}
 		return user;
 	}
-
 	@Override
-	public UserDto[] nameSearch(String name) {
+	public int countSameName(String name) {
 		int num = 0;
 		for(int i = 0; i< count; i++) {
 			if(name.equals(users[i].getName())) {
 				num++;
 			}
 		}
+		return num;
+	}
+	
+	@Override
+	public UserDto[] nameSearch(String name) {
+		int num = countSameName(name);
 		UserDto[] usersWithSameName = new UserDto[num];
 		int j = 0;
 		for(int i = 0; i< count; i++) {
