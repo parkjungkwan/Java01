@@ -25,7 +25,8 @@ public class Main {
 				System.out.println("아이디,비번 ");
 				user.setUserid(scanner.next());
 				user.setPassword(scanner.next());
-				userController.postLogin(user);
+				UserDto loginUser = userController.postLogin(user);
+				System.out.println(loginUser.toString());
 				break;
 			case "3":
 				System.out.println("아이디, 변경할 비번 ");

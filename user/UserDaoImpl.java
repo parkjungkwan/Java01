@@ -1,67 +1,63 @@
 package user;
 
-public class UserServiceImpl implements UserService{
-	
-	private UserDto[] users;
-	
-	public UserServiceImpl() {
-		users = new UserDto[3];
-	}
+public class UserDaoImpl implements UserDao{
 
 	@Override
-	public void join(UserDto user) {
-		users[0] = user;
+	public void insertUser(UserDto user) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
 	public UserDto login(UserDto user) {
-		return users[0];
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
-	public void update(UserDto user) {
+	public void updateUser(UserDto user) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void delete(UserDto user) {
+	public void deleteUser(UserDto user) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public boolean idCheck(String id) {
+	public boolean selectIdCheck(String id) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
-	public UserDto mypage(UserDto user) {
+	public UserDto selectUser(UserDto user) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public UserDto[] userList() {
+	public UserDto[] selectUserList() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public UserDto idSearch(String id) {
+	public UserDto selectById(String id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public UserDto[] nameSearch(String name) {
+	public UserDto[] selectByName(String name) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int count() {
+	public int selectCount() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
