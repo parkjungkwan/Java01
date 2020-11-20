@@ -15,7 +15,7 @@ public class Main {
 					+ "(10)전체 회원수");
 			switch (scanner.next()) {
 			case "1":
-				System.out.println("아이디,비번,이름 ");
+				System.out.println("[회원가입] 아이디,비번,이름 ");
 				user = new UserDto();
 				user.setUserid(scanner.next());
 				user.setPassword(scanner.next());
@@ -23,7 +23,7 @@ public class Main {
 				userController.postJoin(user);
 				break;
 			case "2":
-				System.out.println("아이디,비번 ");
+				System.out.println("[로그인] 아이디,비번 ");
 				user = new UserDto();
 				user.setUserid(scanner.next());
 				user.setPassword(scanner.next());
@@ -36,13 +36,13 @@ public class Main {
 				
 				break;
 			case "3":
-				System.out.println("아이디, 변경할 비번 ");
+				System.out.println("[비밀번호 수정] 아이디, 변경할 비번 ");
 				user.setUserid(scanner.next());
 				user.setPassword(scanner.next());
 				userController.putUpdate(user);
 				break;
 			case "4":
-				System.out.println("아이디,비번 ");
+				System.out.println("[회원탈퇴] 아이디,비번 ");
 				user.setUserid(scanner.next());
 				user.setPassword(scanner.next());
 				userController.deleteUser(user);
@@ -69,7 +69,7 @@ public class Main {
 				UserDto[] nameSearch = userController.getNameSearch(scanner.next());
 				break;
 			case "10":
-				int count = userController.getCount();
+				System.out.printf("전체회원수 : %d 명\n",userController.getCount());
 				break;
 			case "0":
 				System.out.println("시스템종료");
