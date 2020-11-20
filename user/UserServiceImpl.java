@@ -15,7 +15,15 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public UserDto login(UserDto user) {
-		return users[0];
+		UserDto result = null;
+		if(user.getUserid().equals(users[0].getUserid()) &&
+				user.getPassword().equals(users[0].getPassword())) {
+			result = users[0];
+		}else {
+			result = null;
+		}
+		
+		return result;
 	}
 
 	@Override

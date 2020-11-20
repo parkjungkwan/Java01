@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		UserController userController = new UserController();
-		UserDto user = new UserDto();
+		UserDto user = null;
 		while(true) {
 			System.out.println("(1)회원가입* (2)로그인 (3)비밀번호 수정* \r\n"
 					+ "(4)회원탈퇴* (5)아이디 중복체크 (6)마이페이지 \r\n"
@@ -16,6 +16,7 @@ public class Main {
 			switch (scanner.next()) {
 			case "1":
 				System.out.println("아이디,비번,이름 ");
+				user = new UserDto();
 				user.setUserid(scanner.next());
 				user.setPassword(scanner.next());
 				user.setName(scanner.next());
@@ -23,10 +24,16 @@ public class Main {
 				break;
 			case "2":
 				System.out.println("아이디,비번 ");
+				user = new UserDto();
 				user.setUserid(scanner.next());
 				user.setPassword(scanner.next());
 				UserDto loginUser = userController.postLogin(user);
-				System.out.println(loginUser.toString());
+				if(loginUser == null) {
+					System.out.println("로그인 실패");
+				}else {
+					System.out.println(loginUser.toString());
+				}
+				
 				break;
 			case "3":
 				System.out.println("아이디, 변경할 비번 ");
