@@ -1,5 +1,4 @@
 package grade;
-
 public class GradeServiceImpl implements GradeService{
 	private GradeDto[] grades;
 	private int count;
@@ -46,46 +45,22 @@ public class GradeServiceImpl implements GradeService{
 	public float avg(int sum) {
 		return (float)sum / 3;
 	}
+	
+	
+	
 	@Override
 	public GradeDto[] gradeSort() {
-		GradeDto[] sort = new GradeDto[3];
-		if(grades[0].getAvg() > grades[1].getAvg() &&
-				grades[0].getAvg() > grades[2].getAvg()) {
-			if(grades[1].getAvg() > grades[2].getAvg()) {
-				sort[0] = grades[0];
-				sort[1] = grades[1];
-				sort[2] = grades[2];
-			}else {
-				sort[0] = grades[0];
-				sort[1] = grades[2];
-				sort[2] = grades[1];
+		int size = grades.length;
+		for(int i=0; i< size-1; i++) {
+			for(int j= i+1; j< size; j++) {
+				if(grades[i].getSum() < grades[j].getSum()) {
+					GradeDto t = grades[i];
+					grades[i] = grades[j];
+					grades[j] = t;
+				}
 			}
 		}
-		if(grades[1].getAvg() > grades[0].getAvg() &&
-				grades[1].getAvg() > grades[2].getAvg()) {
-			if(grades[0].getAvg() > grades[2].getAvg()) {
-				sort[0] = grades[1];
-				sort[1] = grades[0];
-				sort[2] = grades[2];
-			}else {
-				sort[0] = grades[1];
-				sort[1] = grades[2];
-				sort[2] = grades[0];
-			}
-		}
-		if(grades[2].getAvg() > grades[1].getAvg() &&
-				grades[2].getAvg() > grades[0].getAvg()) {
-			if(grades[1].getAvg() > grades[0].getAvg()) {
-				sort[0] = grades[2];
-				sort[1] = grades[1];
-				sort[2] = grades[0];
-			}else {
-				sort[0] = grades[2];
-				sort[1] = grades[0];
-				sort[2] = grades[1];
-			}
-		}
-		return sort;
+		return grades;
 	}
 	@Override
 	public int count() {
