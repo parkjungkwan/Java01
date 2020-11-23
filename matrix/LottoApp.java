@@ -1,10 +1,8 @@
-package main;
+package matrix;
 
 import java.util.Scanner;
 
-import lotto.LottoDto;
-
-public class LottoMain {
+public class LottoApp {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		LottoDto instance = new LottoDto();
@@ -31,5 +29,26 @@ public class LottoMain {
 			System.out.println();
 		}
 	}
+}
+class LottoDto {
+	private int countLimit, lottoCount;
+	private int[] lotto;
+	private int[][] lottos;
+	public int getCountLimit() {return countLimit;}
+	public void setCountLimit(int countLimit) {this.countLimit = countLimit;}
+	public int getLottoCount() {return lottoCount;}
+	public void setLottoCount(int lottoCount) {this.lottoCount = lottoCount;}
+	public int[] getLotto() {return lotto;}
+	public void setLotto(int[] lotto) {this.lotto = lotto;}
+	public int[][] getLottos() {return lottos;}
+	public void setLottos(int[][] lottos) {this.lottos = lottos;}
+}
+interface LottoService {
+
+}
+class LottoServiceImpl {
+
+}
+class LottoController {
 
 }
