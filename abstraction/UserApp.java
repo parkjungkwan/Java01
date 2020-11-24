@@ -2,6 +2,8 @@ package abstraction;
 import java.util.Scanner;
 public class UserApp {
 	public static void main(String[] args) {
+		int a = 3;
+		String s = "";
 		Scanner scanner = new Scanner(System.in);
 		UserController userController = new UserController();
 		UserDto user = null;
