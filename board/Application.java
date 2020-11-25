@@ -39,16 +39,36 @@ import java.util.Scanner;
 public class Application {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String title = "비트 성적관리 프로그램";
-        String navi = "[회원관리]1. 새글 작성 2. 글 목록 보기 3. 처음 화면으로"+
-        " 1. 새글 쓰기 2. 목록 보기 3. 종료 \n > ";
+        String title = "비트 성적관리 프로그램\n";
+        String navi = "[학생 UI]\n"
+        +"01. 학생등록, 02. 아이디중복체크, 03. 학생로그인, 04. 학생정보수정, 05. 학생정보삭제 \n"
+        +"[강사 UI]\n"
+        +"11. 강사등록, 12. 강사접속, 13. 학생목록보기, 14. 학생상세정보, 15. 성적합계, 16.성적평균\n"
+        +"[게시판 UI]\n"
+        +"21. 새글 작성 22. 글 목록 23. 글 상세 24. 글 수정 25.글 삭제\n"
+        +"26. 댓글 쓰기 27. 댓글 보기 \n"
+        +"0. 종료 \n > ";
         while(true){
-            System.out.println("");
+            System.out.println(title+navi);
             switch (scanner.next()) {
-                case "1":
-                    
-                    break;
-            
+                case "01":  break;
+                case "02":  break;
+                case "03":  break;
+                case "04":  break;
+                case "05":  break;
+                case "11":  break;
+                case "12":  break;
+                case "13":  break;
+                case "14":  break;
+                case "15":  break;
+                case "16":  break;
+                case "21":  break;
+                case "22":  break;
+                case "23":  break;
+                case "24":  break;
+                case "25":  break;
+                case "26":  break;
+                case "27":  break;
                 case "0":
                     System.out.println("종료");
                     return;
