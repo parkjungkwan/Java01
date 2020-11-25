@@ -1,56 +1,78 @@
 package board.impls;
 
 import board.domains.MemberDto;
-import board.domains.StudentDto;
-import board.domains.TeacherDto;
 import board.services.MemberService;
 
 public class MemberServiceImpl implements MemberService {
 
     @Override
-    public void registerMember(MemberDto member) {
+    public void registerGrade(MemberDto grade) {
         // TODO Auto-generated method stub
 
     }
 
     @Override
-    public void modifyMember(MemberDto member) {
+    public void registerStudent(MemberDto student) {
         // TODO Auto-generated method stub
 
     }
 
     @Override
-    public void removeMember(MemberDto member) {
+    public void registerTeacher(MemberDto teacher) {
         // TODO Auto-generated method stub
 
     }
 
     @Override
-    public StudentDto login(StudentDto student) {
+    public void modifyGrade(MemberDto grade) {
+        // TODO Auto-generated method stub
+
+    }
+
+    @Override
+    public void removeGrade(MemberDto grade) {
+        // TODO Auto-generated method stub
+
+    }
+
+    @Override
+    public void modifyStudent(MemberDto student) {
+        // TODO Auto-generated method stub
+
+    }
+
+    @Override
+    public void removeStudent(MemberDto student) {
+        // TODO Auto-generated method stub
+
+    }
+
+    @Override
+    public MemberDto login(MemberDto student) {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
-    public TeacherDto access(TeacherDto teacher) {
+    public MemberDto access(MemberDto teacher) {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
-    public StudentDto[] fetchStudentList() {
+    public MemberDto[] fetchStudentList() {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
-    public StudentDto fetchStudentDetail(String userId) {
+    public MemberDto fetchStudentDetail(String userId) {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
-    public int sum(StudentDto student) {
+    public int sum(MemberDto grade) {
         // TODO Auto-generated method stub
         return 0;
     }
@@ -66,5 +88,8 @@ public class MemberServiceImpl implements MemberService {
         // TODO Auto-generated method stub
         return false;
     }
+
+    
+    
     
 }

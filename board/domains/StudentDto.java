@@ -1,15 +1,24 @@
 package board.domains;
 
 public class StudentDto extends MemberDto {
-    private int kor, eng, math;
-    public int getKor() {return kor;}
-	public void setKor(int kor) {this.kor = kor;}
-	public int getEng() {return eng;}
-	public void setEng(int eng) {this.eng = eng;}
-	public int getMath() {return math;}
-    public void setMath(int math) {this.math = math;}
-    @Override
-	public String toString() {
-		return "GradeDto [kor=" + kor + ", eng=" + eng + ", math=" + math+"]";
-	}
+
+    private String nickName; 
+    public StudentDto() {}
+    public StudentDto(
+        int userId,
+        String userName,
+        String password,
+        String nickname) {
+        super.userId = userId;
+        super.userName = userName;
+        super.password = password;
+
+    }
+
+    public String getNickName() {
+        return nickName;
+    }
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
+    }
 }

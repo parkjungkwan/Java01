@@ -10,6 +10,13 @@ public class ArticleDto {
     private Calendar writtenDate;
     private Calendar updatedDate;
 
+    public ArticleDto(){}
+    public ArticleDto(int writerId,String title,String content){
+        this.writerId = writerId;
+        this.title = title;
+        this.content = content;
+    }
+
     public int getArtId() {
         return artId;
     }
@@ -46,20 +53,6 @@ public class ArticleDto {
     public void setUpdatedDate(Calendar updatedDate) {
         this.updatedDate = updatedDate;
     }
-    /*
-    public boolean equals(Object o) {
-        if(o instanceof BoardDTO) {
-            BoardDTO b = (BoardDTO)o;
-            if(id == b.id) {
-                return true;
-            }
-        }
-        
-        
-        return false;
-    }
-    */
-    
 }
 
 
