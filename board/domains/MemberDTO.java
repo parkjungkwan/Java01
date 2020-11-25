@@ -2,19 +2,20 @@ package board.domains;
 
 // 게시판 관리등에서 
 // 로그인하는 회원을 담당할 Member 클래스
-public class MemberDTO {
+public class MemberDto {
     //필드
-    private int id; //회원 번호
+    private int userId; //회원 번호
     private String userName; //로그인 id
     private String password; //로그인 비밀번호
     private String nickName; //게시판에서 보여지는 닉네임
+
     
     //getters/setters
-    public int getId() {
-        return id;
+    public int getUserId() {
+        return userId;
     }
-    public void setId(int id) {
-        this.id = id;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
     public String getUserName() {
         return userName;

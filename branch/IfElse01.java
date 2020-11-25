@@ -1,4 +1,4 @@
-package day02;
+package branch;
 // if - else 구조
 // if - else 구조란
 // 만약 if의 조건식이 false가 나오면
@@ -13,7 +13,7 @@ package day02;
 // 두가지로 나뉠때에도 if else 구조가 나오게 된다.
 
 
-public class Ex12IfElse01 {
+public class IfElse01 {
     public static void main(String[] args) {
         int number = -3;
         if(number < 0) {

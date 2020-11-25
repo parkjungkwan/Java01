@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import util.ScannerUtil;
 
-public class Ex03NextIntTest {
+public class NextIntTest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("숫자: ");

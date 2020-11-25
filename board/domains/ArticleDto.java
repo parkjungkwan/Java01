@@ -2,18 +2,19 @@ package board.domains;
 
 import java.util.Calendar;
 
-public class BoardDTO {
-    private int id;
+public class ArticleDto {
+    private int artId;
     private int writerId;
     private String title;
     private String content;
     private Calendar writtenDate;
     private Calendar updatedDate;
-    public int getId() {
-        return id;
+
+    public int getArtId() {
+        return artId;
     }
-    public void setId(int id) {
-        this.id = id;
+    public void setArtId(int artId) {
+        this.artId = artId;
     }
     public int getWriterId() {
         return writerId;
@@ -45,7 +46,7 @@ public class BoardDTO {
     public void setUpdatedDate(Calendar updatedDate) {
         this.updatedDate = updatedDate;
     }
-    
+    /*
     public boolean equals(Object o) {
         if(o instanceof BoardDTO) {
             BoardDTO b = (BoardDTO)o;
@@ -57,6 +58,7 @@ public class BoardDTO {
         
         return false;
     }
+    */
     
 }
 

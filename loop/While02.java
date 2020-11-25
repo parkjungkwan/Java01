@@ -1,8 +1,8 @@
-package day03;
+package loop;
 // while과 for 가장 큰 차이는
 // while은 횟수제한이 없다는 것이다.
 import java.util.Scanner;
-public class Ex16While02 {
+public class While02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         

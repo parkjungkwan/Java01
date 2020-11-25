@@ -9,7 +9,7 @@ package array;
 // 두가지 선택이 있다.
 // 1. 값이 작은것에서 큰순서로 오름차순 정렬
 // 2. 값이 큰것에서 작은순서로 내림차순 정렬
-public class Ex06Sort {
+public class Sort {
     
     public static void main(String[] args) {
         int[] intArray = new int[5];

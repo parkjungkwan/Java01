@@ -1,11 +1,11 @@
-package day04;
+package loop;
 // 무한 루프
 // 무한루프란 조건식에서 항상 참이 나와서
 // 해당 루프가 종료되지 않고
 // 우리가 프로그램을 강제종료할때까지 계속 돌아가는
 // 반복문을 무한 루프라고 한다.
 // 무한루프를 만드는 다양한 방법을 알아보자
-public class Ex02InfiniteLoop {
+public class InfiniteLoop {
     public static void main(String[] args) {
         System.out.println("1. for 반복문을 이용한 무한루프");
         //A. 컨트롤변수의 값이 변화가 없으면

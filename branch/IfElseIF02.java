@@ -1,4 +1,4 @@
-package day02;
+package branch;
 
 // 사용자로부터 점수를 입력받아서
 // 90점이상: A
@@ -9,7 +9,7 @@ package day02;
 //가 출력되는 프로그램을 작성해보세요 (25분까지)
 import java.util.Scanner;
 
-public class Ex16IfElseIF02 {
+public class IfElseIF02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("점수: ");

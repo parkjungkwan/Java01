@@ -1,9 +1,9 @@
-package day01;
+package syntax;
 // 기본형 데이터타입 - 논리형
 // boolean
 // boolean의 경우 딱 2가지의 값만 존재한다.
 // true 혹은 false
-public class Ex08PrimitiveType04 {
+public class PrimitiveType04 {
     public static void main(String[] args) {
         boolean myBool = true;
         System.out.println("myBool의 현재값: "+myBool);

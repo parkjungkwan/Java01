@@ -1,4 +1,4 @@
-package day02;
+package branch;
 // 사용자로부터 
 // 번호, 이름, 국영수 점수를 입력받아서
 // 번호: ##번 이름: ###
@@ -10,7 +10,7 @@ package day02;
 // 모든 점수를 올바르게 입력할때만
 // 위의 정보가 출력되게 프로그램을 작성해보세요(20분까지)
 import java.util.Scanner;
-public class Ex18NestedIf02 {
+public class NestedIf02 {
     static final int SUBJECT_SIZE = 3;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

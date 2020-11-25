@@ -1,4 +1,4 @@
-package day03;
+package loop;
 // 반복문
 // 반복문이란 특정 조건이 true가 나오는 동안
 // 코드 블락을 반복시키는 코드를 반복문이라고 한다.
@@ -11,7 +11,7 @@ package day03;
 // 제어변수가 특정 조건식을 만족하는 동안 코드를 반복하고
 // 제어변수의 값을 변화시켜서 다시 조건식을 체크해서 true면 반복, false면
 // 반복종료가 된다.
-public class Ex01For {
+public class For {
     public static void main(String[] args) {
         // for 반복문은 다음과 같은 양식을 가진다.
         // for(제어변수의 선언과 초기화; 조건식; 변화식){

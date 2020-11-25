@@ -1,11 +1,11 @@
-package day02;
+package branch;
 // 사용자로부터 이름, 국어, 영어, 수학 점수를 입력 받아서
 // 총점이 210점 이상이고 모든 점수가 60점 이상이면 
 // "### 학생님은 합격입니다" 가 출력되고
 // 그외에는 모두 "### 학생님은 불합격입니다" 가 출력되는
 // 프로그램을 작성하시오 (55분까지)
 import java.util.Scanner;
-public class Ex14IfElse03 {
+public class IfElse03 {
     static final int SUM_STANDARD = 210;
     static final int INDIVIDUAL_STANDARD = 60;
     public static void main(String[] args) {

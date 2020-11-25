@@ -1,6 +1,6 @@
-package day04;
+package loop;
 //int에 이어서 double 도 지원하는 계산기를 만들어보자
-public class Ex09Calculator02 {
+public class Calculator02 {
     //add() 구현
     static int add(int a, int b) {
         return a+b;

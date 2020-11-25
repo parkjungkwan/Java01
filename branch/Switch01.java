@@ -1,11 +1,11 @@
-package day02;
+package branch;
 // 조건문 02 - switch
 
 // if와는 다르게 switch의 경우
 // 정수형 변수나 스트링 변수를 하나 선택해서
 // 그 변수의 각각의 값에 대한 코드처리를 해주게 된다.
 
-public class Ex19Switch01 {
+public class Switch01 {
     public static void main(String[] args) {
         int number = 2;
 

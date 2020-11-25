@@ -9,7 +9,7 @@ package array;
 // 그리고 각각을 배열 0번, 배열 1번 .... 배열 9번 이렇게 지칭하면
 // 우리가 각각의 공간을 호출할 수 있다.
 // 
-public class ArrayTest {
+public class Array01 {
     public static void main(String[] args) {
         // 배열 선언과 초기화
         // 데이터타입[] 배열이름 = new 데이터타입[크기]

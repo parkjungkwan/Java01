@@ -1,10 +1,10 @@
-package day04;
+package loop;
 
 // 계산기의 기능을 구현해서 
 // 계산기를 만들어보자!
 import java.util.Scanner;
 
-public class Ex08Calculator {
+public class Calculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         

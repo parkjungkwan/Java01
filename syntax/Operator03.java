@@ -1,10 +1,10 @@
-package day02;
+package syntax;
 // 비교연산자
 // 비교연산자는
 // 2개의 값을 비교한다.
 // 변수와 변수
 // 혹은 변수와 숫자값등을 비교 가능하다.
-public class Ex01Operator03 {
+public class Operator03 {
     public static void main(String[] args) {
         int number1 = 3;
         int number2 = 4;

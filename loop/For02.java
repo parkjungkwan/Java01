@@ -1,7 +1,7 @@
-package day03;
+package loop;
 // for 문의 다양한 예제
 import java.util.Scanner;
-public class Ex02For02 {
+public class For02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         //1. 1부터 사용자가 입력한 숫자까지를 한줄씩 출력하는

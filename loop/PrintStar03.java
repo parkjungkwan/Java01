@@ -1,8 +1,8 @@
-package day03;
+package loop;
 // 별찍기 3번
 // 공백은 " " 으로 표현 가능하다.
 import java.util.Scanner;
-public class Ex07PrintStar03 {
+public class PrintStar03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("--------");

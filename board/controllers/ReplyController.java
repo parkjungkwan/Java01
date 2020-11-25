@@ -1,4 +1,4 @@
-package controller;
+package board.controllers;
 
 import java.util.ArrayList;
 

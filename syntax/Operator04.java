@@ -1,4 +1,4 @@
-package day02;
+package syntax;
 // 논리연산자
 // 논리연산자는 2개의 boolean 값 혹은 1개의 boolean 값에 대한 연산을 한다.
 // && || !
@@ -12,7 +12,7 @@ package day02;
 // !: NOT 연산자. 1개의 boolean값을 반대값으로 뒤집는다.
 //    즉 true는 false로, false는 true로 바꾼다.
 
-public class Ex02Operator04 {
+public class Operator04 {
     public static void main(String[] args) {
         System.out.println("--------&&-------");
         System.out.println("true && true: "+(true && true));

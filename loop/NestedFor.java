@@ -1,7 +1,7 @@
-package day03;
+package loop;
 // 중첩 for 반복문
 // "for 반복문 안에 for 반복문"
-public class Ex03NestedFor {
+public class NestedFor {
     public static void main(String[] args) {
         for(int i = 1; i <= 3; i++) {
             int value = 0;

@@ -1,4 +1,4 @@
-package day03;
+package loop;
 // 1부터 100까지의 소수를 구하는 프로그램
 // 1. 소수란 무엇인가?
 //    1과 자기자신만이 약수인 숫자
@@ -15,7 +15,7 @@ package day03;
 //  2. 약수란 어떤 수를 나누었을때 나머지가 0인 숫자
 //  3. 어떤 숫자의 가장 큰 약수는 자기자신
 // 이 3가지 조건을 이용해서 1부터 100까지의 소수를 구해볼것이다.
-public class Ex04PrimeNumber {
+public class PrimeNumber {
     public static void main(String[] args) {
         // i for문에서 i는 해당 숫자가 소수인지 아닌지를 검사할 대상이 된다.
         // 그렇다면 i의 초기화식은?

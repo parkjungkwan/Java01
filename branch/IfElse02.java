@@ -1,9 +1,9 @@
-package day02;
+package branch;
 // 사용자로부터 숫자를 입력받아서
 // 홀수, 짝수를 출력하는 프로그램을 작성해주세요. (40분까지)
 import java.util.Scanner;
 
-public class Ex13IfElse02 {
+public class IfElse02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("숫자: ");
