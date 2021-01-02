@@ -8,7 +8,7 @@ import static java.util.stream.Collectors.toList;
 import org.junit.jupiter.api.Test;
 import java.io.PrintStream;
 
-public class If {
+public class If01 {
     public static void main(String... args) {
         PrintStream p = Objects.requireNonNull(System.out);
         Arrays.asList(-1).stream().forEach(i -> {
